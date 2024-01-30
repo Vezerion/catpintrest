@@ -1,0 +1,74 @@
+.header
+    height: 64px
+    padding: 0 62px
+    background-color: #2196F3
+    display: flex
+    margin-bottom: 48px
+    box-shadow: 0px 6px 7px 0px rgba(34, 60, 80, 0.3)
+    &__btn
+        display: block
+        text-align: center
+        text-decoration: none
+        line-height: 64px
+        height: 100%
+        border: none
+        color: #fff
+        background-color: #2196F3
+        cursor: pointer
+        &:hover
+            background-color: #1E88E5
+    &__all
+        width: 120px
+    &__favorites
+        width: 173px
+.main
+    display: grid
+    justify-content: center
+    grid-template-columns: repeat(auto-fill, 225px)
+    grid-template-rows: repeat(auto-fill, 225px)
+    gap: 50px
+    &__btn
+        width: 140px
+        height: 40px
+        display: block
+        margin: 50px auto 30px auto
+        cursor: pointer
+        box-shadow: 0px 6px 7px 0px rgba(34, 60, 80, 0.3)
+        background-color: #2196F3
+        color: #fff
+        border: none
+        font-size: 18px
+        transition: all 0.5s
+        &:hover
+            background-color: #1E88E5
+            transform: scale(1.1)
+.cat
+    position: relative
+    width: 225px
+    height: 225px
+    transition: all 0.5s
+    &:hover
+        box-shadow: 0px 6px 7px 2px rgba(34, 60, 80, 0.3)
+        transform: scale(1.1)
+        .favorite
+            display: block              
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+.favorite
+    cursor: pointer
+    display: none
+    position: absolute
+    right: 0
+    bottom: 0
+    background-color: inherit
+    border: none
+    transition: all 0.5s 
+    &:hover
+        animation: beat .5s infinite alternate
+    
+@keyframes beat
+    to
+        transform: scale(1.1)
+        
