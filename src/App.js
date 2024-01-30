@@ -19,7 +19,7 @@ function App() {
       <Header />
       <div className="App">
         <Routes>
-          <Route path='/' element={<Main />} />
+          <Route path='/catpintrest' element={<Main />} />
           <Route path='/favorites' element={<Favorite />} />
         </Routes>
       </div>
